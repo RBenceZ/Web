@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza rendelés</title>
+</head>
+<body>
+    <form action="#" method="get">
+        <fieldset>
+            <legend>Kapcsolat</legend>
+                <p>
+                    <label for="nev">Rendelő neve*</label>
+                    <input type="text" name="nev" id="nev">
+                </p>
+                <p>
+                    <label for="tel">Telefonszám*</label>
+                    <input type="tel" name="tel" id="tel"
+                    placeholder="+36 30 123 4567" required> 
+                </p>
+                <p> 
+                    <label for="cim">Cím*</label>
+                    <input type="cim" name="cim" id="cim">
+                </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Pizza</legend>
+                <p>
+                    <label for="fajta">Fajta*</label>
+                    <select id="fajta" name="fajta" required>
+                    <option value="">-- válassz --</option>
+                    <option value="margherita">Margherita</option>
+                    <option value="sonkas">Sonkás</option>
+                    <option value="sonkasgombas">Sonkás-Gombás</option>
+                    <option value="sonkaskukoricas">Sonkás-Kukoricás</option>
+                    <option value="sajtos">Sajtos</option>
+                    <option value="negysajtos">Négysajtos</option>
+                    <option value="magyaros">Magyaros</option>
+                    <option value="szalamis">Szalámis</option>
+                    </select>
+                </p>
+                <p><strong>Méret:</strong></p>
+                <p>
+                    <input type="radio" id="m1" name="meret"
+                    value="26" checked>
+                    <label for="m1">26 cm</label>
+
+                    <input type="radio" id="m2" name="meret"
+                    value="32">
+                    <label for="m1">32 cm</label>
+                    
+                    <input type="radio" id="m3" name="meret"
+                    value="64">
+                    <label for="m1">64 cm</label>
+                </p>
+
+            <p><strong>Szeletek száma:</strong></p>
+            <p>
+                <input type="radio" id="m1" name="szelet"
+                    value="4" checked>
+                    <label for="szelet1">4</label>
+
+                    <input type="radio" id="m2" name="szelet"
+                    value="8">
+                    <label for="szelet2">8</label>
+                    
+                    <input type="radio" id="m3" name="szelet"
+                    value="16">
+                    <label for="szelet3">16</label>
+
+                    <input type="radio" id="m3" name="szelet"
+                    value="32">
+                    <label for="szelet4">32</labeel>
+            </p>
+            <p>
+                <p><strong>Szószok:</strong></p>
+            <input type="checkbox" id="f1" name="szosz"
+                value="ketchup">
+                <label for="szosz1 ">Ketchup</label>
+
+                <input type="checkbox" id="f2" name="szosz"
+                value="majonez">
+                <label for="szosz2">Majonéz</label>
+
+                <input type="checkbox" id="f2" name="szosz"
+                value="sajt">
+                <label for="szosz3">Sajt</label>
+
+                <input type="checkbox" id="f2" name="szosz"
+                value="csipos">
+                <label for="szosz4">Csípős</label>
+            </p>
+            <p>
+                <label for="db">Darab *</label>
+                <input type="number" id="db" name="darab"
+                value="1" min="1" max="10" required>
+            </p>
+        </fieldset>
+
+            <p>
+                <label for="megj">Megjegyzés</label><br>
+                <textarea id="megj" name="megjegyzes"
+                rows="3" cols="34"></textarea>
+            </p>
+
+             <p>
+                <input type="checkbox" id="aszf" name="aszf"
+                value="elfogadva" required>
+                <label for="aszf">Elfogadom a feltételeket *</label>
+            </p>
+
+        <button type="submit">Megrendelem</button>
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+    
+</body>

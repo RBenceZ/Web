@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regisztráció</title>
+</head>
+<body>
+    <h1>Regisztráció</h1>
+    <!--  -->
+    <form action="https://httbin.org/post" method="get">
+        <p>
+            <label for="nev">Teljes Név*:</label>
+            <input type="text" name="nev" id="nev"
+            placeholder="pl.: Vak Béla" required    >
+        </p>
+
+        <p>
+        <label for="email">Email cím*:</label>
+        <input type="email" name="email" id="email"
+         placeholder="pl.: kakao@gmail.com" required>   
+        </p>
+
+        <p>
+         <label for="telefon">Telefonszám*:</label>
+         <input type="tel" name="telefon" id="telefon"
+         minlength="12" maxlength="16"
+         placeholder="pl.: +36 70 456-7890" required>
+        </p>
+
+        <p>
+        <label for="age">Életkor*</label>
+        <input type="number" name="age" id="age"
+        min = "0" max="120"
+        step="1">
+        </p>
+
+        <p>
+         <!-- Csak egy opcio -->
+        <label for="Gender">Férfi</label>
+        <input type="radio" name="gender" id="ferfi" value="ferfi">
+
+        <label for="Gender">Nő</label>
+        <input type="radio" name="gender" id="no" value="no">
+        </p>
+
+        <p>
+        <!-- Több opcio választás -->
+        <label for="Sports">Foci</label>
+        <input type="checkbox" name="sport" id="Football" value="Football">
+
+        <label for="Sports">Röplabda</label>
+        <input type="checkbox" name="sport" id="Volleyball" value="Volleyball">
+
+        </p>
+        <p>A *-gal jelőlt mezők kőtelezők</p>
+        <button type="submit">Regisztráció</button>
+    </form>
+    
+</body>
+</html>
